@@ -81,7 +81,6 @@
          }
          .intro_bann_text {
          background-image: url(img/bg-01.svg);
-         /* background-image: url('file:///C:/Users/user/Downloads/Untitled-1.jpg'); */
          background-size: cover;
          background-position: center;
          background-repeat: no-repeat;
@@ -190,10 +189,6 @@
             }
          /* apply now buttons */
 
-         .text--about:before {
-            position: relative;
-            top: -10px;
-         }
 
          /* table */
          .table td, .table th{
@@ -215,14 +210,14 @@
          .prg_info {
          padding: 40px 40px 40px 40px;
          }
+         .prg_info.prg_info_1 {
+            margin-top: 80px;
+         }
          video {
          border-radius: 10px;
          }
          .about-btech ul{
             font-size: 18px;
-         }
-         .about-btech h3 {
-         text-align: center !important;
          }
          .about-btech p {
          font-size: 18px;
@@ -341,7 +336,7 @@
          }
          .aee-blk {
          padding: 50px 0;
-         background: #DEEED9;
+         background: #f3fffb;
          }
          .rank-score {
          background: linear-gradient(to top,  #589a85,  #589a85);
@@ -497,8 +492,16 @@
 		input::placeholder {
 		    color: #656565 !important;
 		}
+      @media (max-width:768px){
+         .prg_info.prg_info_1 {
+            margin-top: 101px;
+         }
+      }
 
      @media (max-width: 480px) {
+      .prg_info.prg_info_1 {
+         margin-top: 0px;
+      }
      	.about-btech {
      		margin: 0px 0;
      	}
@@ -541,7 +544,7 @@
 
     }
     .aee-blk {
-    padding: 0px 0 30px 0 !important;
+    padding: 0px 10px 30px 10px !important;
 }
 
 .testi_grp {
@@ -787,8 +790,8 @@ padding: 40px 0;
                         <div class="row">
                            
                            <div class="col-md-4  text-center">
-                              <div class="prg_info">
-                                 <h4 style="visibility: hidden;">Certificate Course<br>(12 Months)</h4>
+                              <div class="prg_info prg_info_1">
+                                 
                                  <a href="https://amrita.edu/program/panchakarma-therapy/" ><p>Panchakarma Therapy</p></a>
                                  <a href="https://amrita.edu/program/panchakarma-therapy/" class="apply--now">Apply Now</a>
                               </div>
@@ -802,8 +805,7 @@ padding: 40px 0;
                               </div>
                            </div>
                            <div class="col-md-4  text-center">
-                              <div class="prg_info">
-                                 <h4 style="visibility: hidden;">Certificate Course<br>(12 Months)</h4>
+                              <div class="prg_info prg_info_1">
                                  <a href="https://amrita.edu/program/ayurvedic-nursing/" ><p>Ayurvedic Nursing</p></a>
                                  <a href="https://amrita.edu/program/ayurvedic-nursing/" class="apply--now">Apply Now</a>
                               </div>
@@ -817,12 +819,28 @@ padding: 40px 0;
             </div>
          </div>
       </section>
-
-   
       <section class="about-btech" id="entranceexam">
          <div class="container">
             <div class="row">
-               <!-- 1 -->
+               <div class="col-lg-5 text-left">
+                  <h3 style="text-align: left;">About</h3>
+                  <p>The Amrita School of Ayurveda pursues a unique path in blending ancient philosophies and science of health by nurturing a better breed of Ayurvedic physicians, professionally world – class and mentally equipped to meet the challenges of the modern world. Admissions will be based on NEET for BAMS and AIAPGET for MD/MS.
+
+                  </p>
+               </div>
+               <div class="col-lg-7">
+                  <video class="video-fluid" loop="" controls="" style="width: 100%;">
+                     <source src="img/ayurveda-admission-video.mp4" type="video/mp4">
+                  </video>
+                 
+               </div>
+            </div>
+         </div>
+      </section>
+   
+      <!-- <section class="about-btech" id="entranceexam">
+         <div class="container">
+            <div class="row">
                <div class="col-lg-12">
                   <h3 class="text-center text--about pb-4">About</h3>
                   <hr>
@@ -836,7 +854,6 @@ padding: 40px 0;
                   </ul>
                   <hr>
                </div>
-               <!-- 2 -->
                <div class="col-lg-12">
                   <h4>Ayurvedic Pharmacy</h4>
                   <p>Students once completing the course are capable of meeting different requirements of both manufacturing and 
@@ -853,7 +870,6 @@ padding: 40px 0;
                   </ul>
                   <hr>
                </div>
-               <!-- 3 -->
                <div class="col-lg-12">
                   <h4>Ayurvedic Nursing</h4>
                   <p>Students once completing the course are capable of meeting different requirements in nursing care in different Ayurveda specialties. 
@@ -870,7 +886,7 @@ padding: 40px 0;
                </div>               
             </div>
          </div>
-      </section>
+      </section> -->
       <section class="top_recurters" id="placements">
          <div class="container">
             <div class="row logo-pool">
@@ -922,7 +938,7 @@ padding: 40px 0;
             </div>
          </div>
       </section>
-      <section class="aee-blk" id="aee">
+      <section class="aee-blk"  id="aee">
          <div class="container">
             <div class="row faculty_blk">
                <div class="col-lg-12 impo_rty">
@@ -959,7 +975,8 @@ padding: 40px 0;
 </div>
 </a>
 </div> -->
-               <table class="table table-hover">
+               <table class="table table-hover" style="-webkit-box-shadow: 1px 2px 9px rgb(0 0 0 / 15%);
+               box-shadow: 1px 2px 9px rgb(0 0 0 / 15%);">
                   <thead>
                   <tr>
                      <th scope="col">Program</th>
@@ -986,7 +1003,92 @@ padding: 40px 0;
             </div>
          </div>
       </section>
-      
+      <section class="about-btech" id="entranceexam">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <img src="img/about-image.png" style="width: 100%;">
+                  <!-- <iframe class="ahead_intro_video d-none d-lg-block d-sm-none" width="100%" height="410" src="https://www.youtube.com/embed/bfeoFCvN4W0?autoplay=1&amp;mute=1&amp;loop=1" allow="autoplay" frameborder="0" allowfullscreen=""></iframe>
+                     <iframe class="ahead_intro_video d-lg-none d-sm-block" width="100%" height="195" src="https://www.youtube.com/embed/bfeoFCvN4W0?autoplay=1&amp;mute=1&amp;loop=1" allow="autoplay" frameborder="0" allowfullscreen=""></iframe> -->
+               </div>
+               <div class="col-lg-6 text-left">
+                  <h3 style="text-align: left;">Shaping Your Career Dream After MD/MS</h3>
+                  <p>
+                     The Amrita School of Ayurveda pursues a unique path in blending ancient philosophies and science of health by nurturing a better breed of Ayurvedic physicians, professionally world class and mentally equipped to meet the challenges of the modern world.</p>
+                  <!-- Accordion -->
+                  <div id="accordionExample" class="accordion shadow">
+                     <!-- Accordion item 1 -->
+                     <div class="card">
+                        <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                           <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative text-dark collapsible-link py-2">Panchakarma Therapy</a></h6>
+                        </div>
+                        <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse">
+                           <div class="card-body">
+                              <p>The Panchakarma therapy course enables the candidates to get hands on training in various traditional panchakarma therapies. Also, they will be proficient in executing Keraleeya panchakarma therapies & practices.
+                              </p>
+                              <strong>Scope of the Course</strong>
+                              <ul class="list_cont">
+                                 <li>To be an expert in performing Panchakarma therapies</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Accordion item 2 -->
+                     <div class="card">
+                        <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                           <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed text-dark collapsible-link py-2">Ayurvedic Pharmacy</a></h6>
+                        </div>
+                        <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                           <div class="card-body">
+                              <p>Students once completing the course are capable of meeting different requirements of both manufacturing and consumer sector of Ayurvedic drugs. For manufacturing sector, they will be in a position to take care of classical methods of drug manufacturing, drug selection, standardization, quality control, drug store management and other manufacturing requirements. For consuming sector, they will be qualified persons for drug dispensing and other related activities. Also, the course aims to produce qualified technologist who have the capacity of producing high quality Ayurvedic drugs by employing traditional techniques and also to control and maintain the quality.
+                              </p>
+                              <strong>Scope of the Course</strong>
+                              <ul class="list_cont">
+                                 <li>To be an expert in manufacturing of Ayurvedic formulations.</li>
+                                 <li>To identify, collect and process the raw materials used in Ayurvedic drugs, and formulations.</li>
+                                 <li>To be conversant with drugs and cosmetics act and regulations.</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Accordion item 3 -->
+                     <div class="card">
+                        <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                           <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed text-dark collapsible-link py-2">Ayurvedic Nursing</a></h6>
+                        </div>
+                        <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+                           <div class="card-body">
+                              <p>Students once completing the course are capable of meeting different requirements in nursing care in different Ayurveda specialties. They will be proficient enough to provide nursing care at the level of outpatient & inpatient departments. At the OP level they may be able to assist the physician in partaking the OP related practices & procedures. They also will be competent in performing different inpatient ward practices & procedures and also in assisting the para surgical procedures in minor OT along with dispensing of Ayurvedic medicines.
+                              </p>
+                              <strong>Scope of the Course</strong>
+                              <ul class="list_cont">
+                                 <li>To be an expert in assisting physicians in the OP</li>
+                                 <li>To be an expert in Ayurvedic specialty nursing care</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Accordion item 4 -->
+                     <!-- <div class="card">
+                        <div id="headingFour" class="card-header bg-white shadow-sm border-0">
+                           <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed text-dark collapsible-link py-2">Academics</a></h6>
+                        </div>
+                        <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample" class="collapse">
+                           <div class="card-body">
+                              <ul class="list_cont">
+                                 <li>Learn from eminent faculty from across India, with rich teaching, clinical experience.</li>
+                                 <li>Get mentored by Senior Professors with Ph.D. in all departments.</li>
+                                 <li>Students get supervised training to conduct lectures and seminars.</li>
+                                 <li>Training in scientific writing and to publish articles in peer reviewed journals.</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
             
       <section class="dual_degree" id="ranking">
          <div class="container">
